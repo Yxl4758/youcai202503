@@ -9,9 +9,9 @@ public class Test4 {
         Thread withDrowThread = new Thread(() -> {
             while (true) {
                 if (bankAccount.getBalance() > 0) {
-                    System.out.println("withDrowThread：");
+                    System.out.print("withDrowThread：");
                     bankAccount.withDrow((int)(Math.random()*20));
-                    System.out.print(bankAccount);
+                    System.out.println(bankAccount);
                     Thread.yield();
                     try {
                         Thread.sleep(1000);
