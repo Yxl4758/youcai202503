@@ -1,4 +1,4 @@
-package com.youcai.day09._DeadLock;
+package com.youcai.day09._05DeadLock;
 
 public class OrderedLocking {
     private static final Object tieLock = new Object();
